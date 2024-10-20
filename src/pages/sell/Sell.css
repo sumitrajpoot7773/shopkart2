@@ -1,0 +1,169 @@
+body{
+    background-color: #ffffff;
+}
+.section1{
+    background: url(../../Assests/SellsImage/Desktop_sell.webp);
+    height: 40vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.upperside{
+    height: 63vh;
+    width: 100vw;
+}
+.section1 h1{
+    font-size: 2.5rem;
+    padding: 3rem;
+    margin-left: 2.5rem;
+    font-style: oblique;
+    font-weight: 600;
+}
+.section1 .user{
+    height: 23vh;
+    width: 90vw;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    background-color: #ffffff;
+    position: absolute;
+    top: 21rem;
+    margin: 0 5rem;
+    border-radius: 1%;
+    box-shadow: 0px 1px 10px 5px rgb(216, 233, 238);
+    
+}
+.section1 .user .one,.two,.three,.four,.five{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 10px;   
+}
+.user .one img,.five img,.four img,.two img,.three img{
+     width: 3rem;
+     height: 3rem;
+}
+
+.section1 .user .one p,.five p,.four p,.two p,.three p{
+    font-size: 1rem;
+    font-weight: 600;
+    width: 10rem;
+   
+    
+}
+
+.section2{
+    
+    height: 60vh;
+    width: 95vw;
+  
+   color: black;
+   margin: 2rem ;
+   margin-left: 3rem;
+}
+
+.section2 .h1{
+    font-size: 2rem;
+    padding: 2rem;
+    font-style: oblique;
+    font-weight: 600;
+}
+.section2 .h1 span{
+    color: #027cd5;
+}
+
+@media (max-width: 1024px) {
+    .section1 .user {
+        width: 95vw;
+        margin: 0 2rem;
+        top: 18rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .section1 {
+        height: auto;
+        min-height: 30vh;
+    }
+
+    .section1 h1 {
+        font-size: 2rem;
+        padding: 2rem;
+        margin-left: 1.5rem;
+    }
+
+    .section1 .user {
+        flex-wrap: wrap;
+        height: auto;
+        min-height: 20vh;
+        width: 90vw;
+        margin: 0 auto;
+        top: 15rem;
+    }
+
+    .section1 .user .one,
+    .section1 .user .two,
+    .section1 .user .three,
+    .section1 .user .four,
+    .section1 .user .five {
+        width: 45%;
+        margin: 1rem;
+    }
+
+    .section1 .user .one p,
+    .section1 .user .two p,
+    .section1 .user .three p,
+    .section1 .user .four p,
+    .section1 .user .five p {
+        width: auto;
+    }
+
+    .section2 {
+        height: auto;
+        min-height: 50vh;
+        width: 90vw;
+        margin: 1rem auto;
+        margin-left: 0;
+    }
+
+    .section2 .h1 {
+        font-size: 1.8rem;
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .section1 .user {
+        flex-direction: column;
+        height: auto;
+        min-height: 30vh;
+        width: 90vw;
+        margin: 0 auto;
+        top: 12rem;
+    }
+
+    .section1 .user .one,
+    .section1 .user .two,
+    .section1 .user .three,
+    .section1 .user .four,
+    .section1 .user .five {
+        width: 80%;
+        margin: 1rem auto;
+    }
+
+    .section2 {
+        height: auto;
+        min-height: 40vh;
+        width: 90vw;
+        margin: 1rem auto;
+        margin-left: 0;
+    }
+
+    .section2 .h1 {
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+}

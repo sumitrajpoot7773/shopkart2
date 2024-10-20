@@ -1,0 +1,156 @@
+
+.login-page {
+    background-image: url(../../Assests/login.jpg);
+    height: 85vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+    
+}
+
+.login-details {
+    /* background-color: #0075f1; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+    gap: 2rem;
+    margin-top: -5rem;
+}
+
+.login-details h1 {
+    color: white;
+    font-size: 2rem;
+}
+
+.login-details p {
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.login-details img {
+    height: 13rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 20vw; /* Adjust width as needed */
+    max-width: 90%; /* Adjust max-width as needed */
+}
+.form input:focus{
+    outline: none;
+    color: white;
+}
+.form input {
+    /* width: 30vw; */
+    padding: 1.5rem;
+    font-size: 0.5rem;
+    border: none;
+    background: transparent;
+    /* color: white; */
+    border-bottom: 1px solid white;
+}
+.form input::placeholder{
+    color: rgb(253, 251, 251);
+    font-size: 0.8rem;
+}
+.form input[type="text"],.form input[type="password"]{
+    color: white !important;
+} 
+.form p{
+    color: white;
+}
+
+.form input[type="submit"] {
+    background-color: #0075f1;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+.form input[type="submit"]:hover {
+    background-color: #0055a4;
+}
+
+.footer{
+    /* position: absolute;
+    bottom: 5rem; */
+}
+
+@media (max-width: 768px) {
+    .login-details {
+        margin-top: -3rem;
+        padding: 1.5rem 1rem;
+    }
+
+    .login-details h1 {
+        font-size: 1.5rem;
+    }
+
+    .login-details p {
+        font-size: 0.9rem;
+    }
+
+    .login-details img {
+        height: 10rem;
+    }
+
+    .form {
+        width: 80vw; /* Adjust width as needed */
+    }
+}
+
+@media (max-width: 480px) {
+    .login-page {
+        height: auto;
+        padding: 1rem;
+    }
+
+    .login-details {
+        margin-top: -2rem;
+        padding: 1rem 0.5rem;
+    }
+
+    .login-details h1 {
+        font-size: 1.2rem;
+    }
+
+    .login-details p {
+        font-size: 0.8rem;
+    }
+
+    .login-details img {
+        height: 8rem;
+    }
+
+    .form {
+        width: 90vw; /* Adjust width as needed */
+    }
+
+    .form input {
+        padding: 1rem;
+        font-size: 0.8rem;
+    }
+
+    .form input::placeholder {
+        font-size: 0.7rem;
+    }
+
+    .form input[type="submit"] {
+        padding: 0.5rem 0.8rem;
+        font-size: 0.8rem;
+    }
+}

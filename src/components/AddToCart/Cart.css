@@ -1,0 +1,17 @@
+/* styles.css */
+.cart-btn {
+    background-color: #7851a9; 
+    color: white; 
+    border: none; 
+    padding: 10px 35px; 
+    font-size: 15px; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+    margin-top: 1rem;
+  }
+  
+  .cart-btn:hover {
+    background-color: darkorange; 
+  }
+  

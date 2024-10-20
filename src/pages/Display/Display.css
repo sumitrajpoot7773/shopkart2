@@ -1,0 +1,132 @@
+/* section{
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image img{
+    height: 85vh;
+    width: 50vw;
+}
+
+.details{
+    margin-right:9rem ;
+    margin-bottom: 10rem;
+} */
+
+/* Display.css */
+.product-section {
+    height: 80vh;
+    width: 80vw;
+    margin: 2rem auto;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    border-radius: 10px;
+    background-color: #f4f4f8; 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+    position: relative;
+    
+  }
+  
+  .product-image img {
+    max-width: 300px; 
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid #ddd;
+  }
+  
+  .product-details {
+    max-width: 300px;
+    margin-left: 20px;
+  }
+  
+  .product-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    /* margin-bottom: 10px; */
+  }
+  
+  .product-price {
+    font-size: 1.2em;
+    color: #81b562;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .product-description,
+  .product-category,
+  .product-brand,
+  .product-shipping,
+  .product-warranty,
+  .product-returnPolicy {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 5px;
+  }
+  
+  .product-category,
+  .product-brand,
+  .product-shipping,
+  .product-warranty,
+  .product-returnPolicy {
+    font-style: italic;
+  }
+  
+  .no-data-message {
+    text-align: center;
+    color: #999;
+    margin-top: 50px;
+  }
+  .addtocart {
+    margin-top: 30px; 
+    justify-content: center; 
+    position: absolute;
+    bottom: 1rem;
+  }
+
+  @media (max-width: 768px) {
+    .product-section {
+        height: auto; /* Allow height to adjust */
+        width: 90vw;
+        flex-direction: column; /* Stack elements vertically */
+        padding: 1rem;
+    }
+
+    .product-image img, .product-details {
+        max-width: 90%; /* Allow images and details to be more flexible */
+        margin: 0 auto;
+        margin-bottom: 1rem;
+    }
+
+    .addtocart {
+        position: static; /* Position add to cart button normally */
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .product-title {
+        font-size: 1.2rem; /* Slightly smaller title font */
+    }
+
+    .product-price {
+        font-size: 1rem; /* Slightly smaller price font */
+    }
+
+    .product-description,
+    .product-category,
+    .product-brand,
+    .product-shipping,
+    .product-warranty,
+    .product-returnPolicy {
+        font-size: 0.9rem; /* Slightly smaller detail font */
+    }
+}

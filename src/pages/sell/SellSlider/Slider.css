@@ -1,0 +1,61 @@
+.sliderSell {
+    position: relative;
+}
+
+.next1 {
+    position: absolute;
+    top: 5.5rem;
+    right: 3.5rem;
+    height: 5rem;
+    width: 4rem;
+    border: none;
+    border-radius: 1rem 0 0 1rem;
+}
+
+.prew1 {
+    position: absolute;
+    left: 2rem;
+    top: 5.5rem;
+    height: 5rem;
+    width: 4rem;
+    border: none;
+    border-radius: 0 1rem 1rem 0;
+}
+
+@media (max-width: 768px) {
+    .next1,
+    .prew1 {
+        top: 4rem;
+        height: 4rem;
+        width: 3.5rem;
+        font-size: 0.8rem;
+    }
+
+    .next1 {
+        right: 2.5rem;
+        border-radius: 1rem 0 0 1rem;
+    }
+
+    .prew1 {
+        left: 1.5rem;
+        border-radius: 0 1rem 1rem 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .next1,
+    .prew1 {
+        top: 3rem;
+        height: 3.5rem;
+        width: 3rem;
+        font-size: 0.7rem;
+    }
+
+    .next1 {
+        right: 2rem;
+    }
+
+    .prew1 {
+        left: 1rem;
+    }
+}

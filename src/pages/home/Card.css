@@ -1,0 +1,99 @@
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    margin: 2rem auto;
+    justify-content: center; /* Center the cards horizontally */
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    width: 300px; /* Base width */
+    height: 25rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.category-card {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.category-card a {
+    text-decoration: none;
+}
+
+.title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.description {
+    font-size: 0.8rem;
+    color: #666;
+    margin-bottom: 10px;
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical; /* This should be vertical to clamp lines */
+}
+
+.price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #28a745;
+    margin-bottom: 10px;
+}
+
+.image {
+    width: 100%;
+    aspect-ratio: 3 / 2;
+    object-fit: contain;
+}
+
+.fragrances, .smartphones, .home-decoration, .groceries {
+    background-color: white;
+}
+
+.loader {
+    /* margin: 0 auto; */
+    margin-left: 30%;
+    height: 70vh;
+    /* width: 60vw; */
+}
+
+@media (max-width: 1200px) {
+    .card {
+        width: calc(33.33% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: calc(100% - 20px); /* Ensure there is some gap on smaller screens */
+    }
+}
